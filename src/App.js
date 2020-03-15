@@ -1,13 +1,21 @@
 import React from "react";
 import "./App.css";
+import NasaGrid from "./components/NasaGrid";
+import styled from 'styled-components'
+
+const topP = styled.p `
+  @import url('https://fonts.googleapis.com/css?family=Orbitron|Roboto&display=swap');
+  font-family: 'Roboto', sans-serif;
+`
 
 function App() {
   return (
     <div className="App">
       <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
+        NASA Photo of the day
       </p>
+
+      <NasaGrid />
     </div>
   );
 }
